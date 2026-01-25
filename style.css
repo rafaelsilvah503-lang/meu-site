@@ -4,19 +4,19 @@
     align-items: center;
     color: #ffffff
 }
-
+/* Na página do CSS utilizei do atributo "." para puxar do HTML e realizar as alterações visuais, acho dessa forma mais prático para me organizar */
 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* margin, padding para remover as margens do navegador e box-sizing: border-box para alterar a forma que o tamanho de um elemento é calculado */
 
 body {
     background: #0d0d0d;
     font-family: Arial, sans-serif;
-
+/* altera cor de fundo do site + fonte */
 }
 
 .container {
@@ -24,6 +24,7 @@ body {
     justify-content: center;
     gap: 30px;
     padding: 50px;
+/* organização dos elementos dentro do container */   
 }
 
 .card {
@@ -40,16 +41,23 @@ body {
 
     padding: 20px;
     color: white;
+
+/*semelhante ao que foi feito em .container, porém diverge em escala, aqui estou alterando um card no geral*/
+
 }
 
 .icon {
     font-size: 40px;
 }
 
+/*tamanho do icon/emoji*/
+
 .card p {
     text-align: center;
     font-size: 14px;
 }
+
+/*aqui é a alteração do texto dentro do card*/
 
 .btn {
     border: none;
@@ -57,33 +65,23 @@ body {
     border-radius: 20px;
     color: white;
     cursor: pointer;
+    /* btn/button removi a borda, ajustei tamanho, cor e o cursor ao passar*/
 }
 a.btn {
     text-decoration: none;
     display: inline-block;
     text-align: center;
+
+/*aqui eu to tirando o sublinhado que fica em muitos sites quando tem link atrelado, também utilizei do inline para não ficar estranho o botão e centralizei*/
+
 }
 .grey {
     background: #79777746;
-}
-
-.purple {
-    background: #9b7cff;
-}
-
-.blue {
-    background: #6ecbff;
+    /*cor do botão*/
 }
 
 .card:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items:center;
-    }
-
-}
+/*Aqui é basicamente o efeito que a gente tem quando passa o mouse em cima do card, é uma animação*/
