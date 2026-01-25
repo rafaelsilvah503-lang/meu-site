@@ -82,7 +82,8 @@ a.btn {
 
 @media (max-width: 768px) {
     .container {
-        flex-direcion: column;
+        flex-direction: column;
         align-items:center;
     }
+
 }
